@@ -25,7 +25,7 @@ export const ProjectCard = ({
       href={`/projects/${slug}`}
       className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61] hover:border-purple-500/50 transition group flex flex-col"
     >
-      <div className="overflow-hidden aspect-video relative bg-[#0d0d1a] w-full">
+      <div className="overflow-hidden aspect-[16/12] sm:aspect-[16/11] relative bg-[#0d0d1a] w-full min-h-[280px] sm:min-h-[320px]">
         <AnimatedProjectShowcase
           images={images}
           title={title}

@@ -83,7 +83,9 @@ export const AnimatedProjectShowcase = ({
 
       <div
         className={`relative z-10 flex h-full items-end justify-center ${
-          isHero ? "gap-3 sm:gap-5 md:gap-8 px-4 pb-4 pt-8 md:pb-6 md:pt-10" : "gap-2 sm:gap-3 px-3 pb-3 pt-5"
+          isHero
+            ? "gap-3 sm:gap-5 md:gap-8 px-4 pb-4 pt-8 md:pb-6 md:pt-10"
+            : "gap-3 sm:gap-4 px-4 pb-5 pt-6"
         }`}
       >
         {phoneSlots.map((slot) => {
@@ -169,8 +171,8 @@ const PhoneFrame = ({
       ? "w-[120px] sm:w-[150px] md:w-[180px] lg:w-[200px]"
       : "w-[90px] sm:w-[115px] md:w-[140px] lg:w-[155px]"
     : isCenter
-      ? "w-[88px] sm:w-[100px]"
-      : "w-[68px] sm:w-[78px]";
+      ? "w-[118px] sm:w-[136px]"
+      : "w-[92px] sm:w-[108px]";
 
   return (
     <motion.div
