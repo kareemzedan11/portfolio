@@ -425,7 +425,7 @@ export const PROJECTS = [
     fullDescription:
       "Hisnak (حصنك) is a comprehensive Islamic lifestyle app that brings prayer, Quran, remembrance, and personal spiritual habits into one calm, modern Arabic experience.\n\nKey Features:\n🕌 Prayer times — location-based times with countdown, Hijri date, and full daily schedule\n📖 Quran (المصحف) — browse by surah, juz, hizb, and pages with a clean Uthmani reading view\n🎧 Listen to reciters — search and favorite famous reciters with multiple riwayat (Hafs, Warsh, Mujawwad)\n🤲 Adhkar — morning, evening, sleep, and general athkar with progress tracking\n🧭 Qibla compass — map distance to Mecca and device angle guidance\n📿 Digital tasbih — dhikr counter with rounds and bead animation\n📅 Daily wird & khatmah — track Quran reading goals and completion streaks\n🎯 Challenges — habit challenges like quitting music with day-by-day progress\n✅ Daily tasks — spiritual task checklist with completion percentage\n💬 Hadith & Quran messages — shareable daily content\n\nBuilt with Flutter for a smooth RTL Arabic experience across Android and iOS.",
     image: "/projects/hisnak-promo.png",
-    showcase: "/projects/hisnak-promo.png",
+    showcase: "/projects/hisnak-showcase.png",
     images: [
       "/projects/hisnak-1.png",
       "/projects/hisnak-2.png",

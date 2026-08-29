@@ -15,21 +15,8 @@ import {
   FaChevronRight,
 } from "react-icons/fa";
 
-import { AnimatedProjectShowcase } from "@/components/sub/animated-project-showcase";
 import { PROJECTS } from "@/constants";
 import { slideInFromLeft, slideInFromRight } from "@/lib/motion";
-
-const PROJECT_GRADIENTS: Record<string, string> = {
-  "capital-taxi": "from-zinc-900 via-amber-950 to-yellow-900",
-  moqawlak: "from-slate-900 via-blue-950 to-indigo-900",
-  awfar: "from-rose-950 via-red-900 to-orange-900",
-  "talabat-clone": "from-orange-950 via-orange-900 to-amber-800",
-  muthamin: "from-emerald-950 via-teal-900 to-slate-900",
-  istibdal: "from-sky-950 via-cyan-900 to-slate-900",
-  sarfak: "from-slate-950 via-zinc-900 to-cyan-950",
-  "mawj-lance": "from-violet-950 via-purple-900 to-indigo-950",
-  hisnak: "from-emerald-950 via-green-900 to-teal-950",
-};
 
 export default function ProjectDetailPage() {
   const params = useParams();
@@ -42,9 +29,10 @@ export default function ProjectDetailPage() {
     notFound();
   }
 
-  const gradient =
-    PROJECT_GRADIENTS[project.slug] ??
-    "from-[#1a1035] via-[#12082a] to-[#0a0618]";
+  const cover =
+    "showcase" in project && project.showcase
+      ? project.showcase
+      : project.image;
 
   const openLightbox = (index: number) => setLightboxIndex(index);
   const closeLightbox = () => setLightboxIndex(null);
@@ -65,20 +53,17 @@ export default function ProjectDetailPage() {
 
   return (
     <div className="min-h-screen pt-24 pb-20">
-      {/* Animated product demo hero */}
-      <div className="relative w-full border-b border-purple-500/20">
-        <div className="relative w-full aspect-[16/10] md:aspect-[21/9] max-h-[520px]">
-          <AnimatedProjectShowcase
-            images={project.images}
-            title={project.title}
-            gradient={gradient}
-            variant="hero"
-            className="absolute inset-0 h-full"
-            intervalMs={3000}
-          />
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#030014] via-[#030014]/40 to-transparent" />
-        </div>
-
+      {/* AI cover hero */}
+      <div className="relative w-full aspect-[16/9] md:aspect-[21/9] max-h-[480px] overflow-hidden border-b border-purple-500/20">
+        <Image
+          src={cover}
+          alt={`${project.title} cover`}
+          fill
+          priority
+          className="object-cover object-center"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#030014] via-[#030014]/50 to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 px-6 md:px-16 pb-8 z-20">
           <Link
             href="/#projects"
