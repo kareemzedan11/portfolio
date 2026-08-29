@@ -451,6 +451,97 @@ export const PROJECTS = [
   },
 ] as const;
 
+export const EXPERIENCE = [
+  {
+    period: "2023 — Present",
+    role: "Flutter Developer",
+    place: "Client & Product Projects",
+    summary:
+      "Building and shipping cross-platform mobile apps for Android and iOS across ride-hailing, marketplaces, fintech-adjacent tools, real estate, and Islamic lifestyle products.",
+    achievements: [
+      "Delivered production Flutter apps with store presence on Google Play and the App Store",
+      "Implemented complex flows: maps, realtime tracking, chat, payments, and bilingual Arabic/English UI",
+      "Integrated REST APIs, Firebase, and state management with Bloc / GetX for maintainable architecture",
+      "Owned UI implementation from designs through polished, RTL-ready mobile experiences",
+    ],
+  },
+  {
+    period: "Ongoing",
+    role: "Mobile App Delivery",
+    place: "End-to-end Flutter builds",
+    summary:
+      "Taking apps from concept to release — structure, screens, integrations, performance, and store deployment.",
+    achievements: [
+      "Shipped multi-domain products including Capital Taxi, Moqawlak, Awfar, Muthamin, and Hisnak",
+      "Handled Play Store and App Store deployment, release packaging, and post-launch fixes",
+      "Focused on performance, clean UI, and reliable API/Firebase integration for client-ready apps",
+    ],
+  },
+] as const;
+
+export const SERVICES = [
+  {
+    title: "Flutter Mobile App Development",
+    description:
+      "Cross-platform Android & iOS apps built with Flutter and Dart — clean architecture, scalable features, production-ready quality.",
+    icon: "mobile",
+  },
+  {
+    title: "UI Implementation",
+    description:
+      "Pixel-accurate, responsive mobile UI with smooth motion, RTL Arabic support, and modern design systems.",
+    icon: "ui",
+  },
+  {
+    title: "API & Backend Integration",
+    description:
+      "REST API integration, auth flows, error handling, and reliable data layers for real-world app usage.",
+    icon: "api",
+  },
+  {
+    title: "Firebase Integration",
+    description:
+      "Auth, Firestore/Realtime DB, cloud messaging, storage, and analytics wired into Flutter apps.",
+    icon: "firebase",
+  },
+  {
+    title: "App Store & Google Play Deployment",
+    description:
+      "Release builds, store listings support, signing, and publishing apps to Google Play and the App Store.",
+    icon: "store",
+  },
+  {
+    title: "App Maintenance & Performance",
+    description:
+      "Bug fixes, updates, profiling, and optimization to keep apps fast, stable, and easy to maintain.",
+    icon: "maintenance",
+  },
+] as const;
+
+export const TESTIMONIALS = [
+  {
+    quote:
+      "تعامل احترافي من البداية للنهاية. التطبيق اتنفذ بجودة عالية، الواجهة نظيفة، والأداء ممتاز على أندرويد وiOS. التزام بالمواعيد وتواصل واضح طوال المشروع.",
+    name: "أحمد م.",
+    role: "Product Owner",
+    project: "Marketplace App",
+  },
+  {
+    quote:
+      "تم تحويل التصميم لتطبيق Flutter متكامل بسرعة ودقة. دعم اللغة العربية ممتاز، وربط الـ API وFirebase تم بشكل منظم ومستقر بعد الإطلاق.",
+    name: "سارة خ.",
+    role: "Startup Founder",
+    project: "Consumer Mobile App",
+  },
+  {
+    quote:
+      "تجربة ممتازة في تطوير تطبيق خدمات. الجودة عالية، المتابعة بعد الرفع على المتاجر سريعة، وأي تعديلات كانت تتنفذ باحترافية وبدون تأخير.",
+    name: "عمر ح.",
+    role: "Project Manager",
+    project: "Service Platform",
+  },
+] as const;
+
 export const NAV_LINKS = [
   {
     title: "About me",
@@ -463,6 +554,14 @@ export const NAV_LINKS = [
   {
     title: "Projects",
     link: "#projects",
+  },
+  {
+    title: "Experience",
+    link: "#experience",
+  },
+  {
+    title: "Contact",
+    link: "#contact",
   },
 ] as const;
 
