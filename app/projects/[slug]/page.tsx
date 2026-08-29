@@ -15,8 +15,13 @@ import {
   FaChevronRight,
 } from "react-icons/fa";
 
-import { PROJECTS } from "@/constants";
+import { PROJECTS, type Project } from "@/constants";
 import { slideInFromLeft, slideInFromRight } from "@/lib/motion";
+
+function getProjectCover(project: Project): string {
+  const showcase = project.showcase.trim();
+  return showcase.length > 0 ? showcase : project.image;
+}
 
 export default function ProjectDetailPage() {
   const params = useParams();
@@ -30,7 +35,7 @@ export default function ProjectDetailPage() {
     return null;
   }
 
-  const cover = project.showcase || project.image;
+  const cover = getProjectCover(project);
 
   const openLightbox = (index: number) => setLightboxIndex(index);
   const closeLightbox = () => setLightboxIndex(null);

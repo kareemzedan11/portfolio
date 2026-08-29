@@ -229,7 +229,22 @@ export const OTHER_SKILL = [
   },
 ] as const;
 
-export const PROJECTS = [
+export type Project = {
+  slug: string;
+  title: string;
+  shortDescription: string;
+  fullDescription: string;
+  image: string;
+  showcase: string;
+  images: readonly string[];
+  video: string;
+  playStoreLink: string;
+  appStoreLink: string;
+  githubLink: string;
+  technologies: readonly string[];
+};
+
+export const PROJECTS: Project[] = [
   {
     slug: "capital-taxi",
     title: "Capital Taxi",
@@ -449,7 +464,7 @@ export const PROJECTS = [
     githubLink: "",
     technologies: ["Flutter", "Dart", "Firebase", "Maps", "Audio", "Local Storage"],
   },
-] as const;
+];
 
 export const EXPERIENCE = [
   {
