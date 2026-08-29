@@ -27,12 +27,10 @@ export default function ProjectDetailPage() {
 
   if (!project) {
     notFound();
+    return null;
   }
 
-  const cover =
-    "showcase" in project && project.showcase
-      ? project.showcase
-      : project.image;
+  const cover = project.showcase || project.image;
 
   const openLightbox = (index: number) => setLightboxIndex(index);
   const closeLightbox = () => setLightboxIndex(null);
