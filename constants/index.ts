@@ -544,7 +544,7 @@ export const TESTIMONIALS = [
 
 export const NAV_LINKS = [
   {
-    title: "About me",
+    title: "About",
     link: "#about-me",
   },
   {
@@ -552,12 +552,12 @@ export const NAV_LINKS = [
     link: "#skills",
   },
   {
-    title: "Projects",
-    link: "#projects",
-  },
-  {
     title: "Experience",
     link: "#experience",
+  },
+  {
+    title: "Projects",
+    link: "#projects",
   },
   {
     title: "Contact",
