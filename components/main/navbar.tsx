@@ -15,17 +15,17 @@ export const Navbar = () => {
         {/* Logo + Name */}
         <Link
           href="#about-me"
-          className="flex items-center"
+          className="flex items-center gap-3"
         >
           <Image
-            src="/logo.png"
-            alt="Logo"
-            width={70}
-            height={70}
+            src="/profile.jpg"
+            alt="Kareem Zedan"
+            width={48}
+            height={48}
             draggable={false}
-            className="cursor-pointer"
+            className="cursor-pointer rounded-full object-cover border-2 border-cyan-400 shadow-[0_0_12px_rgba(34,211,238,0.5)]"
           />
-          <div className="hidden md:flex md:selffont-bold ml-[10px] text-gray-300">John Doe</div>
+          <div className="hidden md:flex font-bold text-gray-300">Kareem Zedan</div>
         </Link>
 
         {/* Web Navbar */}
@@ -41,14 +41,14 @@ export const Navbar = () => {
               </Link>
             ))}
 
-            {/* Source Code */}
+            {/* CV */}
             <Link
-              href={LINKS.sourceCode}
+              href={LINKS.cv}
               target="_blank"
               rel="noreferrer noopener"
               className="cursor-pointer hover:text-[rgb(112,66,248)] transition"
             >
-              Source Code
+              CV
             </Link>
           </div>
         </div>
@@ -92,13 +92,13 @@ export const Navbar = () => {
               </Link>
             ))}
             <Link
-              href={LINKS.sourceCode}
+              href={LINKS.cv}
               target="_blank"
               rel="noreferrer noopener"
               className="cursor-pointer hover:text-[rgb(112,66,248)] transition text-center"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Source Code
+              CV
             </Link>
           </div>
 
