@@ -386,6 +386,54 @@ export const PROJECTS: Project[] = [
     technologies: ["Flutter", "Dart", "Firebase", "Chat", "REST API", "Maps"],
   },
   {
+    slug: "dalel-elsham",
+    title: "Dalel Elsham - دليل الشام",
+    shortDescription:
+      "A Damascus and Rif Dimashq guide — 45+ categories of places and services, jobs, prayer times, and civic info in one app.",
+    fullDescription:
+      "Dalel Elsham (دليل الشام) is your guide to Damascus and its countryside. It brings the places, services, and daily needs of the city into one app, so your phone becomes the reference whenever you need a place, a service, or a new opportunity.\n\nWhether you live in Damascus or visit often, the app helps you answer: where should I go, what is available nearby, and who offers the service I need — without a long search.\n\nCategories — the heart of the app:\n🍽️ Restaurants, cafes, sweets, and places to eat\n🛍️ Shops and shopping spots\n🩺 Doctors, clinics, pharmacies, and health centers\n🎓 Institutes, courses, and training centers\n🏢 Offices and everyday services\n🔧 Workshops, maintenance, and construction\n🚗 Car services and transportation\n\nMore than 45 categories cover most daily needs in Damascus and its suburbs. Open the right category and start discovering what is around you.\n\nServices that stay with you through the day:\n💼 Job opportunities in Damascus for employers and job seekers\n🔎 Job search to follow new openings in the city\n🕌 Prayer times in Damascus to organize the day\n📋 Civic content and useful information about Damascus and the Sham\n\nOne app for everything you need in the Sham — a fast, simple experience instead of jumping between pages and sites.",
+    image: "/projects/dalel-elsham-cover.png",
+    showcase: "/projects/dalel-elsham-showcase.png",
+    images: [
+      "/projects/dalel-elsham-1.png",
+      "/projects/dalel-elsham-2.png",
+      "/projects/dalel-elsham-3.png",
+      "/projects/dalel-elsham-4.png",
+      "/projects/dalel-elsham-5.png",
+    ],
+    video: "",
+    playStoreLink: "",
+    appStoreLink:
+      "https://apps.apple.com/us/app/%D8%AF%D9%84%D9%8A%D9%84-%D8%A7%D9%84%D8%B4%D8%A7%D9%85/id6756065161",
+    githubLink: "",
+    technologies: ["Flutter", "Dart", "Firebase", "Google Maps", "REST API", "RTL"],
+  },
+  {
+    slug: "entaliq",
+    title: "Entaliq - انطلق",
+    shortDescription:
+      "A driving-training and ride booking app that connects trainees, trainers, and training companies in one organized flow.",
+    fullDescription:
+      "Entaliq (انطلق) is a smart app for learning to drive and booking training and transport services. One platform brings trainees, trainers, and training companies into a clear, organized experience.\n\nDiscover available trainers and training companies, read their profiles and services, and pick what fits you. Create bookings, set pickup and drop-off, choose a time, and see the trip details and cost before you confirm.\n\nFor trainees and riders:\n• Browse trainers and training companies\n• View trainer details and available services\n• Create a booking and set trip details, pickup, and destination\n• See price and service details before confirming\n• Track booking and trip status, and accept or cancel offers\n• Follow the trip and the driver's location live\n• Chat with the trainer and get booking notifications\n• Manage profile, payment methods, and transactions\n• Rate the trainer after the trip\n\nFor trainers:\n• Create and manage a trainer profile\n• See new requests, accept or decline trips, and send price offers\n• Manage upcoming and active trips and share location during the ride\n• Keep required documents, ratings, and financial records in one place\n\nFor training companies:\n• Manage the company profile, bookings, and offers\n• Organize company drivers and trainers, their documents, and trips\n• Follow clients and financial transactions\n\nEntaliq puts the trainee, the trainer, and the company in one easy Arabic-ready app — a simpler way to learn to drive, book a trip, and run training services.",
+    image: "/projects/entaliq-cover.png",
+    showcase: "/projects/entaliq-showcase.png",
+    images: [
+      "/projects/entaliq-1.png",
+      "/projects/entaliq-2.png",
+      "/projects/entaliq-3.png",
+      "/projects/entaliq-4.png",
+      "/projects/entaliq-5.png",
+      "/projects/entaliq-6.png",
+      "/projects/entaliq-7.png",
+      "/projects/entaliq-8.png",
+    ],
+    video: "",
+    playStoreLink: "",
+    appStoreLink: "",
+    githubLink: "",
+    technologies: ["Flutter", "Dart", "Firebase", "Google Maps", "Chat", "Payments"],
+  },
+  {
     slug: "sarfak",
     title: "Sarfak - صرفك",
     shortDescription:
@@ -487,7 +535,7 @@ export const EXPERIENCE = [
     summary:
       "Taking apps from concept to release — structure, screens, integrations, performance, and store deployment.",
     achievements: [
-      "Shipped multi-domain products including Capital Taxi, Moqawlak, Awfar, Muthamin, and Hisnak",
+      "Shipped multi-domain products including Capital Taxi, Moqawlak, Awfar, Dalel Elsham, Entaliq, Muthamin, and Hisnak",
       "Handled Play Store and App Store deployment, release packaging, and post-launch fixes",
       "Focused on performance, clean UI, and reliable API/Firebase integration for client-ready apps",
     ],

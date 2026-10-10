@@ -8,6 +8,8 @@ const PROJECT_GRADIENTS: Record<string, string> = {
   "talabat-clone": "from-orange-950 via-orange-900 to-amber-800",
   muthamin: "from-emerald-950 via-teal-900 to-slate-900",
   istibdal: "from-sky-950 via-cyan-900 to-slate-900",
+  "dalel-elsham": "from-emerald-950 via-green-800 to-teal-900",
+  entaliq: "from-orange-950 via-orange-800 to-teal-900",
   sarfak: "from-slate-950 via-zinc-900 to-cyan-950",
   "mawj-lance": "from-violet-950 via-purple-900 to-indigo-950",
   hisnak: "from-emerald-950 via-green-900 to-teal-950",
