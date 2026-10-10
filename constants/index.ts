@@ -434,6 +434,28 @@ export const PROJECTS: Project[] = [
     technologies: ["Flutter", "Dart", "Firebase", "Google Maps", "Chat", "Payments"],
   },
   {
+    slug: "elite-academy",
+    title: "Elite Academy",
+    shortDescription:
+      "A learning platform for structured courses, lessons, quizzes, assignments, certificates, and instructor support.",
+    fullDescription:
+      "Elite Academy is a learning platform that helps students build skills through structured courses and practical learning.\n\nWith Elite Academy, students can:\n• Explore and enroll in educational courses\n• Watch lessons and track progress\n• Take quizzes and see results\n• Complete and submit assignments\n• Ask questions and talk with instructors\n• Open certificates after finishing a course\n• Download and share certificates\n• Browse educational services and request support\n• Get notifications for important updates\n\nLearning, practice, progress tracking, and student support sit in one simple platform — start learning, build skills, and reach the goal.",
+    image: "/projects/elite-academy-cover.png",
+    showcase: "/projects/elite-academy-showcase.png",
+    images: [
+      "/projects/elite-academy-1.png",
+      "/projects/elite-academy-2.png",
+      "/projects/elite-academy-3.png",
+      "/projects/elite-academy-4.png",
+      "/projects/elite-academy-5.png",
+    ],
+    video: "",
+    playStoreLink: "https://play.google.com/store/apps/details?id=com.eliteAcademy.app",
+    appStoreLink: "",
+    githubLink: "",
+    technologies: ["Flutter", "Dart", "Firebase", "Video", "Quizzes", "Certificates"],
+  },
+  {
     slug: "sarfak",
     title: "Sarfak - صرفك",
     shortDescription:
@@ -535,7 +557,7 @@ export const EXPERIENCE = [
     summary:
       "Taking apps from concept to release — structure, screens, integrations, performance, and store deployment.",
     achievements: [
-      "Shipped multi-domain products including Capital Taxi, Moqawlak, Awfar, Dalel Elsham, Entaliq, Muthamin, and Hisnak",
+      "Shipped multi-domain products including Capital Taxi, Moqawlak, Awfar, Dalel Elsham, Entaliq, Elite Academy, Muthamin, and Hisnak",
       "Handled Play Store and App Store deployment, release packaging, and post-launch fixes",
       "Focused on performance, clean UI, and reliable API/Firebase integration for client-ready apps",
     ],
